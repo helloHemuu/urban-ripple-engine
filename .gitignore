@@ -1,5 +1,10 @@
-
 .venv/
 __pycache__/
 *.pyc
-.env 
+.env
+# Large raw datasets
+data/raw/
+# Large trained models
+*.pkl
+
+cache/

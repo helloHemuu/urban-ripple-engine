@@ -1,0 +1,374 @@
+/* ========== GLOBAL ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: #e2e8f0;
+}
+
+/* ========== HEADER ========== */
+header {
+    background: #1e293b;
+    padding: 24px;
+    text-align: center;
+    border-bottom: 1px solid #334155;
+}
+
+header h1 {
+    color: #38bdf8;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #94a3b8;
+    font-size: 15px;
+}
+
+/* ========== DASHBOARD LAYOUT ========== */
+.dashboard {
+    display: grid;
+    grid-template-columns: 350px minmax(0, 1fr);
+    gap: 22px;
+    padding: 22px;
+    align-items: start;
+}
+
+/* ========== CONTROL PANEL ========== */
+.control-panel {
+    background: #1e293b;
+    padding: 24px;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.control-panel h2 {
+    color: #38bdf8;
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+
+.control-panel label {
+    display: block;
+    color: #cbd5e1;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* ========== INPUT ========== */
+.control-panel input {
+    width: 100%;
+    padding: 13px;
+    background: #0f172a;
+    color: #ffffff;
+    border: 1px solid #475569;
+    border-radius: 9px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    outline: none;
+}
+
+.control-panel input:focus {
+    border-color: #38bdf8;
+}
+
+/* ========== BUTTON ========== */
+.control-panel button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #0284c7, #2563eb);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.control-panel button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* ========== RESULT BOX ========== */
+#result {
+    margin-top: 22px;
+    padding: 18px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+#result h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+#result p {
+    font-size: 14px;
+}
+
+/* ========== MAP SECTION ========== */
+.map-section {
+    background: #1e293b;
+    padding: 22px;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    min-width: 0;
+}
+
+.map-section h2 {
+    color: #38bdf8;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+/* ========== MAP ========== */
+#map {
+    width: 100%;
+    height: 650px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    overflow: hidden;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1000px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    #map {
+        height: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        padding: 12px;
+        gap: 15px;
+    }
+
+    .control-panel,
+    .map-section {
+        padding: 16px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    #map {
+        height: 400px;
+    }
+}
+/* ===== Analysis Metric Cards ===== */
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.metric-card {
+    background: #111c30;
+    border: 1px solid #263449;
+    border-radius: 12px;
+    padding: 16px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-3px);
+    border-color: #38bdf8;
+}
+
+.metric-label {
+    font-size: 13px;
+    color: #94a3b8;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.metric-card h4 {
+    font-size: 22px;
+    color: #f8fafc;
+    margin: 0;
+}
+
+/* ===== Impact Box ===== */
+
+.impact-box {
+    margin-top: 18px;
+    padding: 18px;
+    border-radius: 12px;
+    background: #172338;
+    border: 1px solid #334155;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.impact-box h2 {
+    font-size: 30px;
+    color: #38bdf8;
+    margin-top: 5px;
+}
+
+.severity-badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+/* ===== Route Legend ===== */
+
+.route-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 18px;
+    padding: 12px;
+    background: #111c30;
+    border-radius: 10px;
+}
+
+.route-legend p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+.legend-blue,
+.legend-red,
+.legend-green {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.legend-blue {
+    background: blue;
+}
+
+.legend-red {
+    background: red;
+}
+
+.legend-green {
+    background: green;
+}
+
+/* ===== Responsive Cards ===== */
+
+@media (max-width: 600px) {
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .impact-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+.metric-card h4 {
+    font-size: 19px;
+    white-space: nowrap;
+}
+/* ===== Impact Visualization ===== */
+
+.impact-meter {
+    margin-top: 18px;
+    padding: 16px;
+    background: #111c30;
+    border: 1px solid #263449;
+    border-radius: 12px;
+}
+
+.impact-meter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+.impact-meter-header strong {
+    color: #38bdf8;
+    font-size: 16px;
+}
+
+.impact-track {
+    width: 100%;
+    height: 12px;
+    background: #334155;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.impact-fill {
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.8s ease;
+}
+/* PDF Download Button */
+
+.download-btn {
+    width: 100%;
+    margin-top: 16px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0284c7, #2563eb);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+/* Smart Recommendation */
+
+.recommendation-box {
+    margin-top: 18px;
+    padding: 16px;
+    background: #172b45;
+    border: 1px solid #2563eb;
+    border-left: 4px solid #38bdf8;
+    border-radius: 12px;
+}
+
+.recommendation-box h3 {
+    color: #38bdf8;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.recommendation-box p {
+    color: #cbd5e1;
+    font-size: 13px;
+    line-height: 1.6;
+}

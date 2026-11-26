@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Urban Ripple Engine</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lib/leaflet.css">
+</head>
+<body>
+
+    <header>
+        <h1>Urban Ripple Engine</h1>
+        <p>Intelligent Urban Road Impact & Route Analysis</p>
+    </header>
+
+    <main class="dashboard">
+
+        <!-- CONTROL PANEL -->
+        <section class="control-panel">
+
+            <h2>Road Impact Control</h2>
+
+            <label for="closures">Number of Road Closures</label>
+
+            <input
+                type="number"
+                id="closures"
+                min="1"
+                max="10"
+                value="3"
+            >
+
+            <button id="analyzeBtn">
+                Analyze Road Impact
+            </button>
+
+            <!-- ANALYSIS RESULTS -->
+            <div id="result">
+                <p>Analysis results will appear here.</p>
+            </div>
+
+        </section>
+
+        <!-- MAP SECTION -->
+        <section class="map-section">
+
+            <h2>Ujjain Road Network</h2>
+
+            <div id="map"></div>
+
+        </section>
+
+    </main>
+
+    <!-- LIBRARIES -->
+    <script src="lib/leaflet.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+```

@@ -1,0 +1,77 @@
+URBAN RIPPLE ENGINE - TRAFFIC DATA EDA REPORT
+==================================================
+
+Dataset Information
+------------------------------
+Total Rows: 48204
+Total Columns: 13
+
+Traffic Volume Statistics
+------------------------------
+count    48204.000000
+mean      3259.818355
+std       1986.860670
+min          0.000000
+25%       1193.000000
+50%       3380.000000
+75%       4933.000000
+max       7280.000000
+Name: traffic_volume, dtype: float64
+
+Average Traffic by Hour
+------------------------------
+hour
+0      834.781051
+1      516.449000
+2      388.353640
+3      371.090864
+4      702.551889
+5     2094.573437
+6     4140.503594
+7     4740.181337
+8     4587.497115
+9     4385.277502
+10    4184.665544
+11    4465.877561
+12    4718.293095
+13    4714.940682
+14    4931.888776
+15    5240.524302
+16    5663.756539
+17    5310.076048
+18    4263.718530
+19    3276.394187
+20    2834.667509
+21    2668.940464
+22    2199.405717
+23    1469.135294
+Name: traffic_volume, dtype: float64
+
+Average Traffic by Day
+------------------------------
+day_of_week
+0    3309.387161
+1    3488.555799
+2    3583.196681
+3    3637.899663
+4    3656.358836
+5    2773.638120
+6    2368.588329
+Name: traffic_volume, dtype: float64
+
+Missing Values
+------------------------------
+holiday                48143
+temp                       0
+rain_1h                    0
+snow_1h                    0
+clouds_all                 0
+weather_main               0
+weather_description        0
+date_time                  0
+traffic_volume             0
+hour                       0
+day_of_week                0
+month                      0
+is_weekend                 0
+dtype: int64

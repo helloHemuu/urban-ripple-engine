@@ -1,0 +1,32 @@
+Feature,Importance
+num__hour,0.8292316199493289
+num__day_of_week,0.06616227206601799
+num__is_weekend,0.04400274234577625
+num__temp,0.033930902985934465
+num__month,0.010673492364101096
+num__clouds_all,0.00700978048334113
+num__rain_1h,0.0029408400835786723
+cat__weather_main_Clouds,0.002013147406796505
+cat__weather_main_Clear,0.0008184057547644049
+cat__weather_main_Mist,0.0007604853406662608
+cat__weather_main_Snow,0.0005837299051078979
+cat__weather_main_Haze,0.000495328418202386
+cat__weather_main_Rain,0.0004952104353194795
+cat__weather_main_Fog,0.0003042036979245534
+cat__weather_main_Thunderstorm,0.00021599484294318328
+num__snow_1h,0.00018352222755208336
+cat__weather_main_Drizzle,0.00014348836844079523
+cat__holiday_New Years Day,1.3130607175332735e-05
+cat__holiday_None,1.0569533469518006e-05
+cat__weather_main_Squall,2.2896462713697687e-06
+cat__holiday_Memorial Day,1.898479186384818e-06
+cat__holiday_Labor Day,1.1580326604202438e-06
+cat__holiday_Independence Day,1.154811433169073e-06
+cat__holiday_Columbus Day,1.0503144635570806e-06
+cat__weather_main_Smoke,9.098289671044009e-07
+cat__holiday_Thanksgiving Day,8.146235119855352e-07
+cat__holiday_State Fair,7.603756067620114e-07
+cat__holiday_Christmas Day,6.12570238032705e-07
+cat__holiday_Washingtons Birthday,2.9376566968550734e-07
+cat__holiday_Veterans Day,1.216893733782335e-07
+cat__holiday_Martin Luther King Jr Day,6.904617694957227e-08
