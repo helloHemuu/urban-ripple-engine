@@ -12,7 +12,7 @@ L.marker([23.1765, 75.7885])
     .bindPopup("Ujjain, Madhya Pradesh");
 
 // Backend API URL
-const API_URL = "http://127.0.0.1:8000/road-impact";
+const API_URL = "https://urban-ripple-engine.onrender.com/road-impact";
 let latestAnalysis = null;
 
 // Button references
